@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --sa-background: 210 40% 96%;
+    --sa-foreground: 229 84% 5%;
+  }
+
+  .dark {
+    --sa-background: 229 84% 5%;
+    --sa-foreground: 0 0 100%;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}

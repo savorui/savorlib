@@ -1,0 +1,37 @@
+{
+  "name": "savorlib",
+  "version": "1.0.0",
+  "description": "Savor libriaries",
+  "keywords": [],
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,html,css,json}": [
+      "npx prettier --write"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ahooks": "^3.8.4",
+    "ansi-html": "^0.0.9",
+    "lucide-react": "^0.468.0"
+  },
+  "devDependencies": {
+    "@types/ansi-html": "^0.0.0",
+    "babel-jest": "^29.6.1",
+    "husky": "^8.0.3",
+    "jest": "^29.6.2",
+    "lerna": "^7.1.4",
+    "lint-staged": "^13.2.3",
+    "prettier": "^3.0.0"
+  }
+}
