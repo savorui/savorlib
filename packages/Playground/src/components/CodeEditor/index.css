@@ -1,0 +1,15 @@
+.ollo-code-editor {
+  .ant-tabs .ant-tabs-tab {
+    color: #94a3b8;
+    font-size: 12px;
+    padding: 6px 0;
+
+    &.ant-tabs-tab-active .ant-tabs-tab-btn{
+      color: #cbd5e1;
+    }
+  }
+
+  .ant-tabs .ant-tabs-ink-bar {
+    background-color: #f1f5f9;
+  }
+}

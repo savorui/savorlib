@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .operation-btn {
+    @apply cursor-pointer p-1 flex items-center border border-solid rounded border-slate-300 ml-2;
+  }
+}

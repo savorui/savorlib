@@ -1,0 +1,12 @@
+.ollo-col-playground-wrapper {
+  .gutter {
+    background-color: #f3f4f6;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    cursor: row-resize;
+
+    &:hover {
+      background-color: #60a5fa;
+    }
+  }
+}

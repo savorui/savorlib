@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .oo-border {
+    @apply border-border border border-solid;
+  }
+
+  .oo-border-b {
+    @apply border-0 border-b border-border border-solid;
+  }
+
+  :root {
+    --sa-background: 0 0% 100%;
+    --sa-foreground: 222.2 84% 4.9%;
+    --sa-card: 0 0% 100%;
+    --sa-card-foreground: 222.2 84% 4.9%;
+    --sa-popover: 0 0% 100%;
+    --sa-popover-foreground: 222.2 84% 4.9%;
+    --sa-primary: 222.2 47.4% 11.2%;
+    --sa-primary-foreground: 210 40% 98%;
+    --sa-secondary: 210 40% 96.1%;
+    --sa-secondary-foreground: 222.2 47.4% 11.2%;
+    --sa-muted: 210 40% 99%;
+    --sa-muted-foreground: 215.4 16.3% 46.9%;
+    --sa-accent: 210 40% 96.1%;
+    --sa-accent-foreground: 222.2 47.4% 11.2%;
+    --sa-destructive: 0 84.2% 60.2%;
+    --sa-destructive-foreground: 210 40% 98%;
+    --sa-border: 214.3 31.8% 91.4%;
+  }
+
+  .dark {
+    --sa-background: 0 0% 12%;
+    --sa-foreground: 210 40% 98%;
+    --sa-card: 222.2 84% 4.9%;
+    --sa-card-foreground: 210 40% 98%;
+    --sa-popover: 222.2 84% 4.9%;
+    --sa-popover-foreground: 210 40% 98%;
+    --sa-primary: 210 40% 98%;
+    --sa-primary-foreground: 222.2 47.4% 11.2%;
+    --sa-secondary: 217.2 32.6% 17.5%;
+    --sa-secondary-foreground: 210 40% 98%;
+    --sa-muted: 217.2 32.6% 17.5%;
+    --sa-muted-foreground: 215 20.2% 65.1%;
+    --sa-accent: 217.2 32.6% 17.5%;
+    --sa-accent-foreground: 210 40% 98%;
+    --sa-destructive: 0 62.8% 30.6%;
+    --sa-destructive-foreground: 210 40% 98%;
+    --sa-border: 217.2 32.6% 17.5%;
+  }
+}

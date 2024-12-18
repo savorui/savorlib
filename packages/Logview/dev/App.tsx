@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Logview from '../src';
-import logs from './mock/logs_ansi_5k';
+import logs from './mock/logs_group_2level';
 
 export default function App() {
   return (

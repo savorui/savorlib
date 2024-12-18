@@ -1,0 +1,2 @@
+import t from"react";import{jsx as n}from"react/jsx-runtime";var o=class extends t.Component{constructor(r){super(r),this.state={hasError:!1,error:null}}static getDerivedStateFromError(r){return{hasError:!0,error:r}}componentDidCatch(r,e){console.error("ErrorBoundary caught an error",r,e)}render(){return this.state.hasError?n("h1",{children:"Something went wrong."}):this.props.children}},E=o;export{E as default};
+//# sourceMappingURL=index.mjs.map

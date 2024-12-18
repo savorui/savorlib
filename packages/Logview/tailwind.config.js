@@ -1,9 +1,11 @@
 const { fontFamily } = require('tailwindcss/defaultTheme');
+import baseConfig from '../../tailwind.config.base';
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ['class'],
-  content: ['src/**/*.{ts,tsx}', 'dev/**/*.{ts,tsx}'],
+  ...baseConfig,
+  // darkMode: ['class'],
+  // content: ['src/**/*.{ts,tsx}', 'dev/**/*.{ts,tsx}'],
   theme: {
     container: {
       center: true,
@@ -23,8 +25,8 @@ module.exports = {
       },
     },
   },
-  corePlugins: {
-    preflight: false,
-  },
-  prefix: 'sa-',
+  // corePlugins: {
+  //   preflight: false,
+  // },
+  // prefix: 'sa-',
 };

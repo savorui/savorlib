@@ -1,0 +1,37 @@
+{
+  "$schema": "https://example.com/person.json",
+  "$id": "https://example.com/person.json",
+  "type": "object",
+  "title": "Person",
+  "required": ["name", "age", "gender"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The person's name.",
+      "default": "John Doe"
+    },
+    "age": {
+      "type": "integer",
+      "description": "The person's age.",
+      "default": 18
+    },
+    "gender": {
+      "type": "string",
+      "description": "The person's gender.",
+      "oneOf": [
+        {
+          "type": "string",
+          "enum": ["male", "female"]
+        }
+      ]
+    },
+    "phone": {
+      "type": "string",
+      "description": "The person's phone number."
+    },
+    "address": {
+      "type": "string",
+      "description": "The person's address."
+    }
+  }
+}

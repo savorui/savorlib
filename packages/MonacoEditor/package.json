@@ -1,0 +1,74 @@
+{
+  "name": "@savorui/monaco-editor",
+  "version": "1.0.0",
+  "description": "默认支持 YAML、JSON、HTML、TypeSCript 等语言及语法诊断的 Monaco 编辑器",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "sideEffects": [
+    "dist/*",
+    "*.scss",
+    "*.less",
+    "*.css"
+  ],
+  "scripts": {
+    "dev": "rspack serve -c ./dev/rspack.config.ts",
+    "watch": "tsup --watch",
+    "build": "tsup",
+    "prepublishOnly": "npm run build",
+    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
+    "eslint:fix": "npm run eslint -- --fix",
+    "stylelint": "stylelint \"**/*.{css,scss,less}\"",
+    "lint": "npm run eslint && npm run stylelint"
+  },
+  "keywords": [
+    "ice",
+    "react",
+    "component"
+  ],
+  "dependencies": {
+    "@monaco-editor/react": "^4.6.0",
+    "@savorui/copy": "workspace:*",
+    "@savorui/error-boundary": "workspace:*",
+    "ahooks": "^3.7.10",
+    "ajv": "^8.17.1",
+    "dayjs": "^1.11.11",
+    "emmet-monaco-es": "^5.4.0",
+    "js-yaml": "^4.1.0",
+    "lucide-react": "^0.438.0",
+    "nanoid": "^5.0.8",
+    "prettier": "^3.3.3",
+    "yaml": "^2.6.0"
+  },
+  "devDependencies": {
+    "@rspack/cli": "^1.0.14",
+    "@rspack/core": "^1.0.14",
+    "@rspack/plugin-react-refresh": "^1.0.0",
+    "@swc/register": "^0.1.10",
+    "@types/js-yaml": "^4.0.9",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.0.0",
+    "postcss": "^8.4.47",
+    "postcss-loader": "^8.1.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "stylelint": "^15.0.0",
+    "tailwindcss": "^3.4.14",
+    "tsup": "^8.3.5"
+  },
+  "peerDependencies": {
+    "@monaco-editor/react": "^4.6.0",
+    "monaco-editor": ">= 0.25.0 < 1",
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.anpm.alibaba-inc.com"
+  },
+  "license": "MIT"
+}
