@@ -5,6 +5,7 @@ import hljs from 'highlight.js';
 import { useEffect } from 'react';
 
 import Copy from '@savorui/copy';
+import ErrorBoundary from '@savorui/error-boundary';
 
 import HtmlIcon from './icons/languages/HtmlIcon';
 import JavaScriptIcon from './icons/languages/JavaScriptIcon';
@@ -40,7 +41,7 @@ const getLanguageIcon = (language: Language) => {
   }
 };
 
-export default function CodeBlock({
+function CodeBlock({
   className = '',
   theme = 'dark',
   language = 'typescript',
@@ -79,3 +80,11 @@ export default function CodeBlock({
     </div>
   );
 }
+
+export default (props: CodeBlockProps) => {
+  return (
+    <ErrorBoundary>
+      <CodeBlock {...props} />
+    </ErrorBoundary>
+  );
+};

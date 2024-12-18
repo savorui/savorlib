@@ -13,6 +13,9 @@ importers:
       '@savorui/copy':
         specifier: workspace:*
         version: link:../Copy
+      '@savorui/error-boundary':
+        specifier: workspace:*
+        version: link:../ErrorBoundary
       highlight.js:
         specifier: ^11.10.0
         version: 11.10.0
