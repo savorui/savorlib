@@ -1,9 +1,20 @@
-@import url('../../../tailwind.base.css');
+/* @import url('../../../tailwind.base.css'); */
+
+.savor-code-block {
+  @apply sa-antialiased sa-text-sm;
+
+  & pre code::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .hljs{
+    background-color: var(--background) !important;
+  }
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 @layer base {
   .savor-border {
@@ -67,17 +78,5 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-  }
-}
-
-.savor-code-block {
-  @apply sa-antialiased sa-text-sm;
-
-  & pre code::-webkit-scrollbar {
-    width: 0;
-  }
-
-  .hljs{
-    background-color: var(--background) !important;
   }
 }

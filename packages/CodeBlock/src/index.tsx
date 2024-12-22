@@ -1,5 +1,5 @@
-import './highlight.css';
 import './index.css';
+import './highlight.css';
 
 import hljs from 'highlight.js';
 import { useEffect } from 'react';
